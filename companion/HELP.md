@@ -1,3 +1,3 @@
 ## VEC Footpedal
 
-Write some help for your users here!
+The layout closely matches the device.
