@@ -26,7 +26,8 @@ const VecFootpedalPlugin: SurfacePlugin<HIDDevice> = {
 		logger.debug(`Checked HID device: ${device.manufacturer} ${device.product}`)
 
 		return {
-			surfaceId: `vecfootpedal:${device.serialNumber}`, // Use the faked serial number
+			surfaceId: `vecfootpedal:pedal`,
+			surfaceIdIsNotUnique: true,
 			description: `${device.manufacturer} ${device.product || 'VEC Footpedal'}`.trim(),
 			pluginInfo: device,
 		}
